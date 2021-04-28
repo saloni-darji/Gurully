@@ -1,0 +1,959 @@
+@import url("https://use.typekit.net/hwv4xwu.css");
+body{
+    font-family: 'Aileron',Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1B3775;
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+}
+a{
+    color: #027EFF;
+    text-decoration: none;
+}
+a:hover{
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+.font-gray{
+    color: #8E8C95;
+}
+.font-lightblue{
+    color: #377DFF;
+}
+.guru-section-spacing{
+    padding:80px 0;
+}
+
+/* button styling starts*/
+.guru-btn{
+    padding:15px 30px;
+    color:#fff;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    border-radius: 8px;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.08);
+}
+.guru-btn_primary{
+    background: #027EFF;
+}
+.guru-btn-secondary{
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24));
+    background: #ffffff;
+    color: #027EFF;
+}
+/*button styling ends*/
+/* Navigation starts*/
+.dropdown-large{min-width:500px;}
+.custom-mega-item{
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px; 
+}
+.guru-nav{
+    color:#1B3775;
+    padding: 20px 0;
+}
+.guru-nav .navbar-nav .nav-link,.guru-nav .navbar-nav .nav-link.active, .guru-nav .navbar-nav .show>.nav-link{
+    color: #1B3775;
+    display: inline-flex;
+    position: relative;
+    text-shadow: none;
+}
+.guru-nav .navbar-nav .nav-link:hover{
+    color:#027EFF;
+}
+.guru-nav .navbar-nav .nav-link.active, .guru-nav .navbar-nav .show>.nav-link{
+    color:#027EFF;
+    text-shadow: none;
+}
+.guru-nav .navbar-nav .nav-link.active:after, .guru-nav .navbar-nav .show>.nav-link:after{
+    content:'';
+    width:20px;
+    height:2px;
+    background:#027EFF;
+    position: absolute;
+    left: 37%;
+    bottom: 0;
+}
+.guru-nav .navbar-nav .custom-mega-item .nav-link:after{
+    display: none;
+}
+.dropdown-menu.dropdown-large{
+    padding: 15px;
+}
+.guru-nav .navbar-nav .guru-nav_login{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0.2px;
+    color: #1B3775;
+    padding: 8px;
+    margin: 0 24px;
+}
+.guru-nav .dropdown-toggle::after{
+    border: none;
+    font-family: 'remixicon' ;
+    content: "\ea4e";
+}
+.guru-btn_wa{
+    background: #06D755;
+    padding: 15px;
+}
+.guru-btn_wa i{
+    color: #fff;
+}
+/*Toogle animation starts*/
+.guru-nav .navbar-toggler{
+    position: relative;
+    border-radius: 0;
+    height: 40px;
+    width: 48px;
+    padding: 0 10px;
+    border: 2px solid #027EFF;
+}
+.guru-nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+.guru-nav .navbar-toggler span {
+    display: block;
+    background-color: #027EFF;
+    height: 4px;
+    width: 25px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: relative;
+    left: 0;
+    opacity: 1;
+ }
+ .guru-nav .navbar-toggler span:nth-child(1),
+.guru-nav .navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.guru-nav .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.guru-nav .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.guru-nav .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+/*Toggle animation ends*/
+.guru-nav .nav-item .guru-btn_primary{
+    margin-right: 15px;
+}
+/*Navigation ends*/
+/*Hero banner starts*/
+.guru-hero-animated{
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+   
+}
+.guru-hero-content h1{
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    /*animation*/
+-webkit-animation:move 5s;
+-moz-animation:move 5s;
+ -ms-animation:move 5s;
+  -o-animation:move 5s;
+     animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+-moz-animation-iteration-count:infinite;
+ -ms-animation-iteration-count:infinite;
+  -o-animation-iteration-count:infinite;
+     animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+-moz-animation-delay:1s;
+ -ms-animation-delay:1s;
+  -o-animation-delay:1s;
+     animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -70px; }
+40% { top: -140px; }
+/* 60% { top: -210px; }
+80% { top: -280px; } */
+}
+
+@-webkit-keyframes move {
+ 0%  { top: 0px; }
+ 20% { top: -70px; }
+40% { top: -140px; }
+ /* 60% { top: -150px; }
+ 80% { top: -200px; } */
+}
+@-moz-keyframes move {
+ 0%  { top: 0px; }
+ 20% { top: -70px; }
+40% { top: -140px; }
+ /* 60% { top: -150px; }
+ 80% { top: -200px; } */
+}
+@-o-keyframes move {
+ 0%  { top: 0px; }
+ 20% { top: -70px; }
+40% { top: -140px; }
+ /* 60% { top: -150px; }
+ 80% { top: -200px; } */
+}
+@keyframes move {
+ 0%  { top: 0px; }
+ 20% { top: -70px; }
+40% { top: -140px; }
+ /* 60% { top: -150px; }
+ 80% { top: -200px; } */
+}
+.guru-hero-wrp {
+    padding: 78px 0 83px 0;
+    position: relative;
+}
+.scroll-down i{
+    background: #CDE7F9;
+    height:34px;
+    width:34px;
+    display: inline-flex;
+    border-radius: 100%;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.scroll-down a:hover {
+    color: #027EFF;
+    text-shadow: none;
+}
+/* .guru-hero-image{
+    background: url(../images/hero-banner1.png)no-repeat;
+    background-size: contain;
+    width:554px;
+    height:424px;
+    position: absolute;
+    top: 50px;
+} */
+.guru-hero-content h1{
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 68px;
+    letter-spacing: 1px;
+}
+.guru-hero-wrp .guru-btn-wrp {
+    margin: 40px 0;
+}
+/*Hero banner ends*/
+/*footer starts*/
+.guru-footer a{
+    color: #1B3775;
+}
+.guru-footer{
+    background: linear-gradient(180deg, #EDF6FF 0%, #EDF6FF 56.14%, rgba(244, 250, 255, 0) 114.66%);
+    padding:72px 0 0 0;
+}
+.guru-footer_content{
+    margin-bottom: 50px;
+}
+.guru-footer_content h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom:22px;
+}
+.guru-footer_content ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.guru-footer_content ul li{
+    margin-bottom:10px;
+}
+.guru-india-flag{
+    background: url(../images/india-flag.svg)no-repeat top left;
+    width:24px;
+    height:16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.guru-envelope{
+    background: url(../images/email-envelope.svg)no-repeat top left;
+    width:12px;
+    height:12px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.guru-footer-email{
+    margin-top: 30px;
+}
+.guru-icon-circle{
+    height:26px;
+    width:26px;
+    background:  rgba(2, 126, 255, 0.2);
+    border-radius: 100%;
+    margin-right:5px;
+    text-align: center;
+    display: inline-block;
+}
+.guru-social-media li, .guru-payment li{
+    height:24px;
+    width:24px;
+    display: inline-block;
+    margin-right: 16px;
+}
+.guru-payment li{
+    height:auto;
+    width:auto;
+    margin-right:10px;
+}
+.guru-terms-menu-list{
+    padding-left:0;
+}
+.guru-terms-menu-list li{
+    float:right;
+    list-style: none;
+    color: #64626A;
+    margin-left: 30px;
+}
+/*footer ends*/
+.guru-bg-primary{
+    padding:80px 0 48px 0;
+    background:  #EDF6FF;
+    
+}
+.guru-service-box{
+    background: #FFFFFF;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 40px 30px;
+}
+.guru-secondary-heading h2{
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.8px;
+    margin-bottom: 30px;
+    color: #1B3775;
+    font-weight: bold;
+}
+.guru-service-content h4{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.guru-heading-subtext{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.guru-service-icon img{
+    height:92px;
+    width:92px;
+    float:left;
+    margin-right:20px;
+}
+/*Design for success starts*/
+
+    .guru-synced-slider-1{
+        /* background: url(../images/design-success-bg.png)no-repeat; */
+        background: url(../images/repeat-vector-bg.png),linear-gradient(to right, #EDF6FF, #EDF6FF);
+        /*,url(../images/bg-right.png), url(../images/bg-bottom.png),
+        linear-gradient(to right, #EDF6FF, #EDF6FF);
+        background-repeat: repeat,
+        no-repeat,
+        no-repeat; */
+        /* background-position: 100%, 114% 50%, 66% 123%; */
+        padding: 40px 40px 0 100px;
+        border-radius: 0px 40px 40px 40px;
+    }
+    .guru-slider-select{
+        background: #FFFFFF;
+        box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+        padding:20px;
+        margin-bottom: 15px;
+    }
+    .guru-slider-select h4{
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 50px;
+        letter-spacing: 0.8px;
+        color:rgba(2, 126, 255,0.2);
+    }
+    .guru-slider-select span{
+        font-size: 24px;
+        line-height: 35px;
+        align-items: center;
+        letter-spacing: 0.45px;
+        color: #1B3775;
+        vertical-align: middle;
+    }
+
+    .guru-synced-slider-1 .slick-current .guru-slider-select{
+        background: #027EFF;
+        box-shadow: 0px 19px 19px rgba(0, 0, 0, 0.1);
+    }
+    .guru-slider-select.slick-active{
+        margin-bottom: 20px;
+    }
+    .guru-synced-slider-1 .slick-current .guru-slider-select h4,.guru-synced-slider-1 .slick-current .guru-slider-select span {
+        color:#fff;
+    }
+    .guru-synced-nav-wrp #design-success-nav{
+        position: absolute;
+        top:-205px;
+    }
+    .guru-slider-spacing{
+        padding: 275px 0 80px 0;
+    }
+    .guru-slider-spacing .guru-secondary-heading{
+        position: absolute;
+        top: 0;
+        margin-top: 100px;  
+    }
+    
+  
+/* Design for success ends*/
+/*Network section starts*/
+.guru-parallax-bgcolor{
+    background: linear-gradient(90deg, #1B3775 0%, #1B3775 48.32%, rgba(27, 55, 117, 0) 74.48%) ;
+    min-height: 660px;
+    padding: 75px 0;
+}
+.guru-prallax-bgimage{
+    background: url(../images/parallax-vector-network.png);
+    min-height: 660px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    background-position: 100%;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom:0;
+}
+.guru-network span, .guru-reach-stats span{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #027EFF;
+}
+.guru-network h2{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.guru-network p, .guru-network h6{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.guru-stats p{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.177778px;
+    color: #FFFFFF;
+}
+/* Network section ends */
+/*white vector bg sections starts*/
+.guru-white-vector-bg{
+     background: url(../images/white-vector-bg.png);
+     background-size: cover;
+}
+
+/* white vector bg sections ends*/
+/*Our insight starts*/
+.guru-custom-card{
+    border-radius: 11px;
+    background: #fff;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.12);
+}
+.guru-custom-card h5{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1B3775;
+}
+.guru-custom-card p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.27px;
+    color: #1B3775;
+}
+.guru-custom-card span{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 10px;
+}
+/*Our insight ends*/
+/* testimonial start*/
+.guru-play-btn a{
+    width: 87px;
+    height: 87px;
+    background: #027EFF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.guru-play-btn a i{
+    color: #fff;
+    font-size: 35px;
+}
+
+.guru-video-thumbnail .guru-play-btn{
+    position: absolute;
+    top: 50%;
+    height: 87px;
+    width: 87px;
+    transform: translate(-27px,-75px);
+    left: 50%;
+}
+/* testimonial ends*/
+/* Breadcrumb starts*/
+.breadcrumb-item{
+    padding-top: 30px;
+}
+.breadcrumb-item.active,.breadcrumb-item a, .breadcrumb-item+.breadcrumb-item::before{
+    color: #1B3775;
+}
+/*Breadcrumb ends*/
+/*talk to us starts*/
+.guru-disclaimer-txt{
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    color: #1B3775;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin:10px 0;
+    display: inline-flex;
+}
+.guru-disclaimer-txt i{
+    color:#4EDB84;
+    margin-right:5px;
+}
+.guru-reach-section h1{
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 68px;
+    letter-spacing: 1px;
+    color: #1B3775;
+    margin-bottom:30px;
+}
+.guru-reach-stats h6{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.6px;
+    color: #1B3775;
+}
+.guru-ttu{
+    background: #EDF6FF;
+    border-radius: 10px;
+    padding: 30px;
+}
+.guru-ttu h4{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.8px;
+    color: #1B3775;
+}
+.guru-ttu p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    color: #1B3775;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.guru-ttu-form .form-control{
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.guru-ttu-form button{
+    border:0;
+}
+/*talk to us ends*/
+/*mock test starts*/
+.guru-mock-icon{
+    height:60px;
+    width:60px;
+    background: #fff;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.guru-mock-icon img{
+    height: 30px;
+    width: 30px;
+}
+.guru-mock-tiles{
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+}
+.bg-blue{
+    background: #027EFF;
+}
+.bg-yellow{
+    background: #ECB31F;
+}
+.bg-red{
+    background: #F96264;
+}
+.guru-mock-tiles h5{
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.45px;
+    color: #FFFFFF;
+}
+/*mock test ends*/
+/* build software starts */
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+.guru-build-software h4{
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.8px;
+}
+.guru-build-software{
+    background: #1B3775;
+    min-height:735px;
+}
+.guru-build-software p{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.guru-build-software-wave{
+    background: url(../images/shield-icon.png), url(../images/wave-radiation-bg.png) ;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 78px,  cover;
+    background-position: 100% 50%;
+    background-position: 50% 0, bottom center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    min-height: 386px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.guru-build-icon {
+    height: 78px;
+    width: 78px;
+    background: #027EFF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guru-build-icon i{
+    color:#fff;
+    font-size: 32px;
+}
+.guru-expertise-course{
+    background: rgba(255,255,255,0.1);
+    border-radius: 25px;
+    color:#fff;
+    padding:10px 30px;
+    margin-right: 115px;
+    line-height: 103px;
+    white-space: nowrap;
+}
+.guru-build-software-wrp{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    min-height: 376px;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding-top:100px;
+    overflow: hidden;
+}
+.guru-build-animate{
+    position: relative;
+    margin: 0 auto;
+    animation: marquee 20s linear infinite;
+}
+.guru-build-better-software{
+    margin: 30px 0;
+}
+.guru-build-better-software h5{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.45px;
+}
+.guru-build-better-software p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.27px;
+}
+.guru-build-graph{
+    border: 1px solid #D1D0D6;
+    border-radius: 12px;
+    padding: 20px 30px;
+    margin:30px;
+}
+.guru-build-graph-icon{
+    top: -32px;
+    right: -32px;
+}
+/* build software ends */
+@media(max-width:1200px){
+    .guru-synced-nav-wrp #design-success-nav{
+        position: relative;
+        top:0;
+        margin-top: 20px;
+    }
+    .guru-slider-spacing .guru-secondary-heading{
+        margin-top: 35px;
+    }
+    .guru-slider-spacing{
+        padding: 100px 0 80px 0;
+    }
+    .guru-prallax-bgimage{
+        background-size: cover;
+    }
+    .guru-reach-section h1{
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 15px;
+    }
+    .guru-reach-stats p{
+        font-size: 14px;
+    }
+    .guru-reach-stats h6{
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@media (max-width:992px) {
+    .container{
+        padding: 0 30px;
+        max-width: 100%;
+    }
+    .guru-slider-select{
+        padding: 15px;
+    }
+    .guru-slider-select h4{
+        font-size: 30px;
+        line-height: 27px;
+    }
+    .guru-slider-select span{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .guru-expertise-course{
+        margin-right: 94px;
+    }
+    .guru-section-spacing{
+        padding:40px 0;
+    }
+    .guru-secondary-heading h2{
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .guru-mock-tiles{
+        padding: 15px;
+    }
+    .guru-mock-tiles h5{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .guru-build-software h4{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .guru-build-software p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .guru-bg-primary{
+        padding: 48px 0 38px 0;
+    }
+    .guru-network h2{
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+    .guru-network p, .guru-network h6{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .guru-stats p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .guru-parallax-bgcolor{
+        padding: 48px 0;
+    }
+    .guru-parallax-bgcolor,.guru-prallax-bgimage{
+        min-height: 500px;
+    }
+    .guru-network span, .guru-reach-stats span{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .guru-service-icon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .guru-footer_content{
+        margin-bottom: 20px;
+    }
+    .guru-footer_content ul li{
+        margin-bottom: 5px;
+    }
+    .guru-footer_content h4{
+        margin-bottom: 15px;
+    }
+    .guru-build-better-software{
+        margin: 15px 0;
+    }
+    .guru-service-content{
+        text-align: center;
+    }
+    .guru-service-box{
+        padding:30px;
+    }
+    .guru-nav .navbar-collapse{
+        background: #027EFF;
+        padding: 15px;
+    }
+    .guru-nav .navbar-collapse .navbar-nav .nav-link{
+        color:#fff;
+    }
+    header{
+        box-shadow: 0 2px 3px -2px rgb(0 0 0 / 29%);
+    }
+    .custom-mega-item{
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0 !important;
+        padding: 0;
+    }
+    .guru-nav .navbar-nav .guru-nav_login{
+        margin:0;
+        padding: .5rem 0;
+        font-weight: normal;
+        line-height: 24px;
+    }
+    .guru-nav .guru-btn.guru-btn_primary{
+        background: transparent;
+        box-shadow: none;
+        display: inline-flex;
+        position: relative;
+        padding: .5rem 0;
+        line-height: 24px;
+    }
+    .guru-nav .guru-btn_wa{
+        margin:0.5rem 0;
+        display: inline-block;
+    }
+}
+
+@media(max-width:767px){
+    .guru-synced-slider-1{
+        padding: 40px 40px 0 40px;
+    }
+    .guru-footer_content {
+        margin-bottom: 20px;
+    }
+    .guru-footer_content ul li {
+        margin-bottom: 5px;
+    }
+    .guru-terms-menu-list li {
+        float: none;
+        margin-left: 0;
+    }
+    .guru-hero-content h1{
+        font-size: 32px;
+        line-height: 63px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;   
+    }
+    .guru-hero-animated{
+        height: 45px;
+    }
+    .guru-hero-wrp {
+        padding: 30px 0;
+    }
+    .guru-build-animate{
+        animation: none;
+    }
+    .guru-build-software-wave{
+        min-height: 365px;
+    }
+    .guru-build-software-wrp{
+        min-height: 350px;
+    }
+    .guru-btn{
+        padding: 12px 15px;
+    }
+    .guru-expertise-course{
+        margin: 10px;
+        line-height: 75px;
+    }
+}
